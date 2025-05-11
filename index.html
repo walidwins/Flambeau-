@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Encens et Poudre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('gbg.jpg'); /* Remplacez par l'image de fond représentant l'encens ou la poudre */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+            color: #fff; /* Texte blanc pour ressortir sur fond sombre */
+        }
+
+        .container {
+            background-color: #000000e3; /* Fond semi-transparent pour un effet doux */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            margin: 0 auto;
+            margin-top: 60px;
+            background-image: url('poudre-texture.jpg'); /* Une texture de poudre fine ou fumée */
+            background-size: cover;
+            background-blend-mode: multiply; /* Mélange la texture avec l'arrière-plan */
+        }
+
+        .profile-pic {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            margin-top: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Ombre légère autour de l'image de profil */
+        }
+
+        .name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #cca21a; /* Ton marron foncé pour rappeler la poudre */
+            text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5); /* Ombre pour un effet de profondeur */
+        }
+
+        .links {
+            margin-top: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .link-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .link-item i {
+            font-size: 50px; /* Augmentation de la taille de l'icône à 50px */
+            padding: 15px; /* Plus de padding pour donner plus d'espace autour des icônes */
+            border-radius: 50%;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.3); /* Fond sombre pour les icônes */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .link-item span a {
+            font-size: 18px;
+            font-weight: bold;
+            color: #5A3D31; /* Couleur chaude rappelant l'encens ou la poudre */
+            text-decoration: none;
+        }
+
+        .link-item span a:hover {
+            text-decoration: underline;
+            color: #D4AF37; /* Couleur dorée au survol */
+        }
+
+        .link-item:hover i {
+            transform: scale(1.1);
+            background-color: #C2B280; /* Légère teinte dorée pour l'interaction */
+        }
+
+        .contact-section {
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0.748);
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            font-size: 20px;
+            color: #5A3D31;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-section a {
+            padding: 10px 15px;
+            background-color: #C2B280; /* Doré pour l'encens */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            background-color: #D4AF37; /* Couleur dorée plus lumineuse au survol */
+        }
+
+        /* Effets de texte pour l'ambiance de fumée */
+        .smoke-effect {
+            font-size: 26px;
+            font-weight: bold;
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .profile-pic {
+                width: 100px;
+                height: 100px;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+
+            .link-item i {
+                font-size: 40px; /* Réduire la taille des icônes pour les petits écrans */
+            }
+
+            .link-item span a {
+                font-size: 14px;
+            }
+
+            .contact-section h2 {
+                font-size: 18px;
+            }
+
+            .contact-section a {
+                font-size: 14px;
+                padding: 8px 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Photo de Profil -->
+        <img src="ere.jpg" alt="Photo de profil" class="profile-pic">
+
+        <!-- Nom -->
+        <div class="name">Flam Beau</div>
+        <!-- Liens Sociaux -->
+        <div class="links">
+            <div class="link-item instagram">
+                <i class="fab fa-instagram"></i>
+                <span><a href="https://www.instagram.com/_flam_beau_" target="_blank">@_flam_beau_</a></span>
+            </div>
+            <div class="link-item tiktok">
+                <i class="fab fa-tiktok"></i>
+                <span><a href="https://www.tiktok.com/@bio.bna" target="_blank">@_flam_beau_</a></span>
+            </div>
+            <div class="link-item facebook">
+                <i class="fab fa-facebook"></i>
+                <span><a href="https://www.facebook.com/share/1Baz6VdAYy" target="_blank">_flam_beau_</a></span>
+            </div>
+            <div class="link-item linkedin">
+                <i class="fab fa-linkedin"></i>
+                <span><a href="https://www.linkedin.com/in/bio-bna-13505934a" target="_blank">_flam_beau_</a></span>
+            </div>
+        </div>
+
+        <!-- Section Contact -->
+        <div class="contact-section">
+            <h2>Contactez-nous</h2>
+            <a href="https://wa.me/212680710826" target="_blank">Passer Votre Commande</a>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+</body>
+</html>
