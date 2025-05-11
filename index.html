@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ajouter ceci dans la section <head> de votre code -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <title>Profil Encens et Poudre</title>
     <style>
         body {
@@ -24,10 +27,7 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
             max-width: 400px;
             margin: 0 auto;
-            margin-top: 60px;
-            background-image: url('poudre-texture.jpg'); /* Une texture de poudre fine ou fumée */
-            background-size: cover;
-            background-blend-mode: multiply; /* Mélange la texture avec l'arrière-plan */
+            margin-top: 60px;   
         }
 
         .profile-pic {
@@ -62,30 +62,34 @@
             margin: 10px 0;
         }
 
-        .link-item i {
-            font-size: 50px; /* Augmentation de la taille de l'icône à 50px */
-            padding: 15px; /* Plus de padding pour donner plus d'espace autour des icônes */
-            border-radius: 50%;
-            color: #fff;
-            background-color: rgba(0, 0, 0, 0.3); /* Fond sombre pour les icônes */
-            transition: transform 0.3s ease, background-color 0.3s ease;
-        }
+
+    /* Modifier ici pour augmenter la taille des icônes */
+    .link-item i {  
+        font-size: 100px; /* Augmenter la taille de l'icône */
+        padding: 30px; /* Ajuster l'espacement autour de l'icône */
+        border-radius: 50%;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.3); /* Fond sombre pour les icônes */
+        transition: transform 0.3s ease, background-color 0.3s ease;
+    }
+
+    .link-item:hover i {
+        transform: scale(1.5); /* Augmenter davantage la taille de l'icône au survol */
+        background-color: #C2B280; /* Légère teinte dorée pour l'interaction */
+    }
+
 
         .link-item span a {
-            font-size: 18px;
+            font-size: 20px; /* Augmenter la taille de la police pour rendre le texte plus grand */
             font-weight: bold;
-            color: #5A3D31; /* Couleur chaude rappelant l'encens ou la poudre */
+            color: #d19961; /* Couleur chaude rappelant l'encens ou la poudre */
             text-decoration: none;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
         }
 
         .link-item span a:hover {
             text-decoration: underline;
-            color: #D4AF37; /* Couleur dorée au survol */
-        }
-
-        .link-item:hover i {
-            transform: scale(1.1);
-            background-color: #C2B280; /* Légère teinte dorée pour l'interaction */
+            color: #fffffe; /* Couleur dorée au survol */
         }
 
         .contact-section {
@@ -137,7 +141,7 @@
             }
 
             .link-item i {
-                font-size: 40px; /* Réduire la taille des icônes pour les petits écrans */
+                font-size: 50px; /* Réduire la taille des icônes pour les petits écrans */
             }
 
             .link-item span a {
